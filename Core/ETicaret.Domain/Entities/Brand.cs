@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ETicaret.Domain.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ETicaret.Domain.Entities
 {
-    public class Brand
+    public class Brand: EntityBase
     {
         public Brand() { }
         public Brand(string name) 
@@ -15,5 +16,6 @@ namespace ETicaret.Domain.Entities
             Name = name; 
         }   
         public string Name { get; set; }
+        public ICollection<Product> Products { get; set; }
     }
 }
