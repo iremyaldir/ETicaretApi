@@ -26,7 +26,7 @@ namespace ETicaretApi.Persistence.Configurations
             
             Detail detail2 = new()
             {
-                Id = 1,
+                Id = 2,
                 Title = "Macbook Detail",
                 Description = "M3-MacbookPro",
                 CategoryId = 3,

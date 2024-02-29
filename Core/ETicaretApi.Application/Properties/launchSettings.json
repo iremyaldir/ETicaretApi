@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "ETicaretApi.Application": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:59055;http://localhost:59058"
+    }
+  }
+}

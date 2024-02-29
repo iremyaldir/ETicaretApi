@@ -7,17 +7,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{933A97EF-B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{52744322-73A0-4B19-87D3-CB82C0AA7D95}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{80A9AD3B-BA57-4EDB-B733-705700056858}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETicaretApi.Application", "Core\ETicaretApi.Application\ETicaretApi.Application.csproj", "{BA8CFE83-A34D-4B14-8971-278610ACA0C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaretApi.Application", "Core\ETicaretApi.Application\ETicaretApi.Application.csproj", "{BA8CFE83-A34D-4B14-8971-278610ACA0C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETicaret.Domain", "Core\ETicaret.Domain\ETicaret.Domain.csproj", "{FF40394D-C075-4154-857E-FFD0B8BA106E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaret.Domain", "Core\ETicaret.Domain\ETicaret.Domain.csproj", "{FF40394D-C075-4154-857E-FFD0B8BA106E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETicaretApi.Infrastructure", "Infrastructure\ETicaretApi.Infrastructure\ETicaretApi.Infrastructure.csproj", "{985AFCC5-4C69-4C85-8E74-AA087E094063}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaretApi.Infrastructure", "Infrastructure\ETicaretApi.Infrastructure\ETicaretApi.Infrastructure.csproj", "{985AFCC5-4C69-4C85-8E74-AA087E094063}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETicaretApi.Persistence", "Infrastructure\ETicaretApi.Persistence\ETicaretApi.Persistence.csproj", "{E84A9FC9-375F-4AEC-8951-03F25ABADE57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaretApi.Persistence", "Infrastructure\ETicaretApi.Persistence\ETicaretApi.Persistence.csproj", "{E84A9FC9-375F-4AEC-8951-03F25ABADE57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETicaretApi.Api", "Presentation\ETicaretApi.Api\ETicaretApi.Api.csproj", "{493D6AAA-72F7-4C97-A475-AD119722E86A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E84A9FC9-375F-4AEC-8951-03F25ABADE57} = {E84A9FC9-375F-4AEC-8951-03F25ABADE57}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaretApi.Api", "Presentation\ETicaretApi.Api\ETicaretApi.Api.csproj", "{493D6AAA-72F7-4C97-A475-AD119722E86A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{D97177A9-C4EC-427E-97C0-E92F307AF913}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,7 +57,7 @@ Global
 		{FF40394D-C075-4154-857E-FFD0B8BA106E} = {933A97EF-B792-4295-BFDF-DC4A60095724}
 		{985AFCC5-4C69-4C85-8E74-AA087E094063} = {52744322-73A0-4B19-87D3-CB82C0AA7D95}
 		{E84A9FC9-375F-4AEC-8951-03F25ABADE57} = {52744322-73A0-4B19-87D3-CB82C0AA7D95}
-		{493D6AAA-72F7-4C97-A475-AD119722E86A} = {80A9AD3B-BA57-4EDB-B733-705700056858}
+		{493D6AAA-72F7-4C97-A475-AD119722E86A} = {D97177A9-C4EC-427E-97C0-E92F307AF913}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {880D5B81-6DC5-4A90-854A-576E5BD99F69}
