@@ -14,6 +14,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETicaretApi.Infrastructure", "Infrastructure\ETicaretApi.Infrastructure\ETicaretApi.Infrastructure.csproj", "{985AFCC5-4C69-4C85-8E74-AA087E094063}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETicaretApi.Persistence", "Infrastructure\ETicaretApi.Persistence\ETicaretApi.Persistence.csproj", "{E84A9FC9-375F-4AEC-8951-03F25ABADE57}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BA8CFE83-A34D-4B14-8971-278610ACA0C4} = {BA8CFE83-A34D-4B14-8971-278610ACA0C4}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETicaretApi.Api", "Presentation\ETicaretApi.Api\ETicaretApi.Api.csproj", "{493D6AAA-72F7-4C97-A475-AD119722E86A}"
 	ProjectSection(ProjectDependencies) = postProject

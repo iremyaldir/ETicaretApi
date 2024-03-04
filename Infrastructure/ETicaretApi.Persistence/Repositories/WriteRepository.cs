@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETicaret.Domain.Common
+namespace ETicaretApi.Persistence.Repositories
 {
-    public interface IEntityBase
+    internal class WriteRepository
     {
     }
 }
