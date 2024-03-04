@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETicaret.Domain.Common
+namespace ETicaretApi.Persistence.UnitOfWorks
 {
-    public interface IEntityBase
+    public class UnitOfWork
     {
     }
 }
