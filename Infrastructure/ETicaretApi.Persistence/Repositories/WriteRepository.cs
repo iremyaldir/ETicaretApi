@@ -1,4 +1,4 @@
-﻿using ETicaretApi.Application.Repositories;
+﻿using ETicaretApi.Application.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

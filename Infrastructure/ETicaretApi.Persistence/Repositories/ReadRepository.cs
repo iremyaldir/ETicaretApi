@@ -1,5 +1,5 @@
 ﻿using ETicaret.Domain.Common;
-using ETicaretApi.Application.Repositories;
+using ETicaretApi.Application.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 using System;

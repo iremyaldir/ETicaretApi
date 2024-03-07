@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ETicaret.Domain.Common
 {
-    public class EntityBase
+    public class EntityBase: IEntityBase
      {
         public int Id { get; set; }
         public DateTime CreatedTime { get; set; } = DateTime.Now;
