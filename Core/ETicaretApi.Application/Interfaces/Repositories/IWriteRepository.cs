@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETicaretApi.Application.Repositories
+namespace ETicaretApi.Application.Interfaces.Repositories
 {
-    public interface IWriteRepository<T> where T: class, new()
+    public interface IWriteRepository<T> where T : class, new()
     {
         Task AddAsync(T entity);
         Task AddRangeAsync(IList<T> entities);
