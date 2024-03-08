@@ -1,6 +1,7 @@
 using ETicaretApi.Api.Configuration;
 using Microsoft.Extensions.Configuration;
 using System.Configuration;
+using ETicaretApi.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,7 +22,7 @@ builder.Configuration
 
     // Setting DBContexts
  builder.Services.AddDatabaseConfiguration(builder.Configuration);
-
+ builder.Services.AddApplication();
 
     var app = builder.Build();
 
