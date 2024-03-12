@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\ETicaretApi.Mapper\ETicaretApi.Mapper.csproj" />
     <ProjectReference Include="..\..\Infrastructure\ETicaretApi.Persistence\ETicaretApi.Persistence.csproj" />
   </ItemGroup>
 

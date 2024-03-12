@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ETicaretApi.Application.DTOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,9 @@ namespace ETicaretApi.Application.Features.Products.Queries.GetAllProducts
         public string Description { get; set; }
         public decimal Price { get; set; }
         public decimal Discount { get; set; }
+        //be careful for the naming
+        public BrandDto Brand { get; set; }
+
 
     }
 }
