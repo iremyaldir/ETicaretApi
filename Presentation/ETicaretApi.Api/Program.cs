@@ -2,6 +2,7 @@ using ETicaretApi.Api.Configuration;
 using Microsoft.Extensions.Configuration;
 using System.Configuration;
 using ETicaretApi.Application;
+using ETicaretApi.Mapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +24,7 @@ builder.Configuration
     // Setting DBContexts
  builder.Services.AddDatabaseConfiguration(builder.Configuration);
  builder.Services.AddApplication();
+ builder.Services.AddCustomMapper();
 
     var app = builder.Build();
 
