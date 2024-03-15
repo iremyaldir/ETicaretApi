@@ -10,12 +10,13 @@ namespace ETicaret.Domain.Entities
     public class Product: EntityBase
     {
         public Product() { }
-        public Product(string title, string description, decimal price, decimal discount)
+        public Product(string title, string description, decimal price, decimal discount, int brandId)
         {
             Title = title;
             Description = description;
             Price = price;
             Discount = discount;
+            BrandId = brandId;
         }
 
         public  string Title { get; set; }
