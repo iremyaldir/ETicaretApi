@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using ETicaretApi.Application.Exceptions;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,9 @@ namespace ETicaretApi.Application
         {
             var assembly = Assembly.GetExecutingAssembly();
 
-            services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(assembly));    
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(assembly));
+           
+            services.AddTransient<ExceptionMiddleware>();
         }
     }
 }

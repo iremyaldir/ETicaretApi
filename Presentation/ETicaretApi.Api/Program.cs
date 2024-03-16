@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using System.Configuration;
 using ETicaretApi.Application;
 using ETicaretApi.Mapper;
+using ETicaretApi.Application.Exceptions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,6 +36,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.ConfigureExceptionHandlingMiddleware();
 app.UseAuthorization();
 
 app.MapControllers();
