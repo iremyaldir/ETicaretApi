@@ -1,5 +1,7 @@
-﻿using ETicaretApi.Application.Behaviours;
+﻿using ETicaretApi.Application.Bases;
+using ETicaretApi.Application.Behaviours;
 using ETicaretApi.Application.Exceptions;
+using ETicaretApi.Application.Features.Products.Rules;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,10 +26,22 @@ namespace ETicaretApi.Application
            
             services.AddTransient<ExceptionMiddleware>();
 
+            services.AddRulesFromAssemblyContaining(assembly, typeof(BaseRules));
+
             services.AddValidatorsFromAssembly(assembly);
             ValidatorOptions.Global.LanguageManager.Culture = new CultureInfo("tr");
 
             services.AddTransient(typeof(IPipelineBehavior<,>),typeof(FluentValidationBehaviour<,>));
+        }
+        private static IServiceCollection AddRulesFromAssemblyContaining(
+            this IServiceCollection services,
+            Assembly assembly,
+            Type type)
+        {
+            var types = assembly.GetTypes().Where(t => t.IsSubclassOf(type) && type != t).ToList();
+            foreach (var item in types)
+                services.AddTransient(item);
+            return services;
         }
     }
 }
